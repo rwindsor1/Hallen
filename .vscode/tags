@@ -1,0 +1,159 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+1b239b10df5c_items_table.py	../migrations/versions/1b239b10df5c_items_table.py	1;"	kind:file	line:1
+1e089c7e8f1d_users_database.py	../migrations/versions/1e089c7e8f1d_users_database.py	1;"	kind:file	line:1
+BooleanField	../app/forms.py	/^from wtforms import StringField, PasswordField, BooleanField, SubmitField$/;"	kind:namespace	line:3
+Config	../app/__init__.py	/^from config import Config$/;"	kind:namespace	line:2
+Config	../config.py	/^class Config(object):$/;"	kind:class	line:4
+DataRequired	../app/forms.py	/^from wtforms.validators import ValidationError, DataRequired, Email, EqualTo$/;"	kind:namespace	line:4
+Email	../app/forms.py	/^from wtforms.validators import ValidationError, DataRequired, Email, EqualTo$/;"	kind:namespace	line:4
+EqualTo	../app/forms.py	/^from wtforms.validators import ValidationError, DataRequired, Email, EqualTo$/;"	kind:namespace	line:4
+Flask	../app/__init__.py	/^from flask import Flask$/;"	kind:namespace	line:1
+FlaskForm	../app/forms.py	/^from flask_wtf import FlaskForm$/;"	kind:namespace	line:2
+Group	../app/models.py	/^class Group(db.Model):$/;"	kind:class	line:35
+Group	../hallen.py	/^from app.models import User, Item, Group, GroupMembership$/;"	kind:namespace	line:2
+GroupMembership	../app/models.py	/^class GroupMembership(db.Model):$/;"	kind:class	line:44
+GroupMembership	../hallen.py	/^from app.models import User, Item, Group, GroupMembership$/;"	kind:namespace	line:2
+Item	../app/models.py	/^class Item(db.Model):$/;"	kind:class	line:25
+Item	../app/routes.py	/^from app.models import User, Item$/;"	kind:namespace	line:6
+Item	../hallen.py	/^from app.models import User, Item, Group, GroupMembership$/;"	kind:namespace	line:2
+LoginForm	../app/forms.py	/^class LoginForm(FlaskForm):$/;"	kind:class	line:6
+LoginForm	../app/routes.py	/^from app.forms import LoginForm, RegisterForm$/;"	kind:namespace	line:3
+LoginManager	../app/__init__.py	/^from flask_login import LoginManager$/;"	kind:namespace	line:5
+Migrate	../app/__init__.py	/^from flask_migrate import Migrate$/;"	kind:namespace	line:4
+PasswordField	../app/forms.py	/^from wtforms import StringField, PasswordField, BooleanField, SubmitField$/;"	kind:namespace	line:3
+RegisterForm	../app/forms.py	/^class RegisterForm(FlaskForm):$/;"	kind:class	line:12
+RegisterForm	../app/routes.py	/^from app.forms import LoginForm, RegisterForm$/;"	kind:namespace	line:3
+SECRET_KEY	../config.py	/^    SECRET_KEY = os.environ.get('SECRET_KEY') or 'secrety-secret'$/;"	kind:variable	line:5
+SQLALCHEMY_DATABASE_URI	../config.py	/^        'sqlite:\/\/\/' + os.path.join(basedir, 'app.db')$/;"	kind:variable	line:7
+SQLALCHEMY_TRACK_MODIFICATIONS	../config.py	/^    SQLALCHEMY_TRACK_MODIFICATIONS = False/;"	kind:variable	line:8
+SQLAlchemy	../app/__init__.py	/^from flask_sqlalchemy import SQLAlchemy$/;"	kind:namespace	line:3
+StringField	../app/forms.py	/^from wtforms import StringField, PasswordField, BooleanField, SubmitField$/;"	kind:namespace	line:3
+SubmitField	../app/forms.py	/^from wtforms import StringField, PasswordField, BooleanField, SubmitField$/;"	kind:namespace	line:3
+User	../app/forms.py	/^from app.models import User$/;"	kind:namespace	line:1
+User	../app/models.py	/^class User(UserMixin, db.Model):$/;"	kind:class	line:7
+User	../app/routes.py	/^from app.models import User, Item$/;"	kind:namespace	line:6
+User	../hallen.py	/^from app.models import User, Item, Group, GroupMembership$/;"	kind:namespace	line:2
+UserMixin	../app/models.py	/^from flask_login import UserMixin$/;"	kind:namespace	line:4
+ValidationError	../app/forms.py	/^from wtforms.validators import ValidationError, DataRequired, Email, EqualTo$/;"	kind:namespace	line:4
+__init__.py	../app/__init__.py	1;"	kind:file	line:1
+__repr__	../app/models.py	/^    def __repr__(self):$/;"	kind:member	line:15
+__repr__	../app/models.py	/^    def __repr__(self):$/;"	kind:member	line:32
+__repr__	../app/models.py	/^    def __repr__(self):$/;"	kind:member	line:41
+__repr__	../app/models.py	/^    def __repr__(self):$/;"	kind:member	line:50
+app	../app/__init__.py	/^app = Flask(__name__)$/;"	kind:variable	line:6
+app	../app/routes.py	/^from app import app$/;"	kind:namespace	line:2
+app	../hallen.py	/^from app import app, db$/;"	kind:namespace	line:1
+basedir	../config.py	/^basedir = os.path.abspath(os.path.dirname(__file__))$/;"	kind:variable	line:2
+body	../app/models.py	/^    body = db.Column(db.String(300))$/;"	kind:variable	line:27
+branch_labels	../migrations/versions/1b239b10df5c_items_table.py	/^branch_labels = None$/;"	kind:variable	line:15
+branch_labels	../migrations/versions/1e089c7e8f1d_users_database.py	/^branch_labels = None$/;"	kind:variable	line:15
+branch_labels	../migrations/versions/fe2283970edb_.py	/^branch_labels = None$/;"	kind:variable	line:15
+check_email_is_unique	../app/forms.py	/^    def check_email_is_unique(self, email_suggestion):$/;"	kind:member	line:27
+check_password	../app/models.py	/^    def check_password(self, password_attempt):$/;"	kind:member	line:21
+check_password_hash	../app/models.py	/^from werkzeug.security import generate_password_hash, check_password_hash$/;"	kind:namespace	line:3
+check_username_is_unique	../app/forms.py	/^    def check_username_is_unique(self, username_suggestion):$/;"	kind:member	line:22
+config	../migrations/env.py	/^config = context.config$/;"	kind:variable	line:13
+config.py	../config.py	1;"	kind:file	line:1
+context	../migrations/env.py	/^from alembic import context$/;"	kind:namespace	line:9
+current_app	../migrations/env.py	/^from flask import current_app$/;"	kind:namespace	line:24
+current_user	../app/routes.py	/^from flask_login import current_user, login_user, logout_user, login_required$/;"	kind:namespace	line:5
+datetime	../app/models.py	/^from datetime import datetime$/;"	kind:namespace	line:2
+db	../app/__init__.py	/^db = SQLAlchemy(app)$/;"	kind:variable	line:8
+db	../app/models.py	/^from app import db$/;"	kind:namespace	line:1
+db	../app/routes.py	/^from app import db$/;"	kind:namespace	line:4
+db	../hallen.py	/^from app import app, db$/;"	kind:namespace	line:1
+depends_on	../migrations/versions/1b239b10df5c_items_table.py	/^depends_on = None$/;"	kind:variable	line:16
+depends_on	../migrations/versions/1e089c7e8f1d_users_database.py	/^depends_on = None$/;"	kind:variable	line:16
+depends_on	../migrations/versions/fe2283970edb_.py	/^depends_on = None$/;"	kind:variable	line:16
+description	../app/models.py	/^    description = db.Column(db.String(300), index=True)$/;"	kind:variable	line:38
+down_revision	../migrations/versions/1b239b10df5c_items_table.py	/^down_revision = '1e089c7e8f1d'$/;"	kind:variable	line:14
+down_revision	../migrations/versions/1e089c7e8f1d_users_database.py	/^down_revision = None$/;"	kind:variable	line:14
+down_revision	../migrations/versions/fe2283970edb_.py	/^down_revision = '1b239b10df5c'$/;"	kind:variable	line:14
+downgrade	../migrations/versions/1b239b10df5c_items_table.py	/^def downgrade():$/;"	kind:function	line:33
+downgrade	../migrations/versions/1e089c7e8f1d_users_database.py	/^def downgrade():$/;"	kind:function	line:33
+downgrade	../migrations/versions/fe2283970edb_.py	/^def downgrade():$/;"	kind:function	line:44
+email	../app/forms.py	/^    email     = StringField(  'Email',           validators=[DataRequired(), Email()])$/;"	kind:variable	line:14
+email	../app/models.py	/^    email = db.Column(db.String(120), index=True, unique=True)$/;"	kind:variable	line:10
+engine_from_config	../migrations/env.py	/^from sqlalchemy import engine_from_config$/;"	kind:namespace	line:6
+env.py	../migrations/env.py	1;"	kind:file	line:1
+fe2283970edb_.py	../migrations/versions/fe2283970edb_.py	1;"	kind:file	line:1
+fileConfig	../migrations/env.py	/^from logging.config import fileConfig$/;"	kind:namespace	line:4
+flash	../app/routes.py	/^from flask import render_template, flash, redirect, url_for, request$/;"	kind:namespace	line:1
+forms.py	../app/forms.py	1;"	kind:file	line:1
+generate_password_hash	../app/models.py	/^from werkzeug.security import generate_password_hash, check_password_hash$/;"	kind:namespace	line:3
+group_id	../app/models.py	/^    group_id = db.Column(db.Integer, db.ForeignKey('group.id'))$/;"	kind:variable	line:30
+group_id	../app/models.py	/^    group_id = db.Column(db.Integer, db.ForeignKey('group.id'))$/;"	kind:variable	line:47
+groups	../app/models.py	/^    groups = db.relationship('GroupMembership', backref='member', lazy='dynamic')$/;"	kind:variable	line:13
+hallen.py	../hallen.py	1;"	kind:file	line:1
+id	../app/models.py	/^    id = db.Column(db.Integer, primary_key=True)$/;"	kind:variable	line:26
+id	../app/models.py	/^    id = db.Column(db.Integer, primary_key=True)$/;"	kind:variable	line:36
+id	../app/models.py	/^    id = db.Column(db.Integer, primary_key=True)$/;"	kind:variable	line:45
+id	../app/models.py	/^    id = db.Column(db.Integer, primary_key=True)$/;"	kind:variable	line:8
+index	../app/routes.py	/^def index():$/;"	kind:function	line:12
+is_admin	../app/models.py	/^    is_admin = db.Column(db.Boolean, index=True)$/;"	kind:variable	line:48
+items	../app/models.py	/^    items = db.relationship('Item', backref='author', lazy='dynamic')$/;"	kind:variable	line:12
+lizzie	../app/routes.py	/^def lizzie():$/;"	kind:function	line:27
+load_user	../app/models.py	/^def load_user(id):$/;"	kind:function	line:54
+logger	../migrations/env.py	/^logger = logging.getLogger('alembic.env')$/;"	kind:variable	line:18
+logging	../migrations/env.py	/^import logging$/;"	kind:namespace	line:3
+login	../app/__init__.py	/^login = LoginManager(app) # set up flask_login extension (?)$/;"	kind:variable	line:10
+login	../app/models.py	/^from app import login$/;"	kind:namespace	line:5
+login	../app/routes.py	/^def login():$/;"	kind:function	line:31
+login_required	../app/routes.py	/^from flask_login import current_user, login_user, logout_user, login_required$/;"	kind:namespace	line:5
+login_user	../app/routes.py	/^from flask_login import current_user, login_user, logout_user, login_required$/;"	kind:namespace	line:5
+logoff	../app/routes.py	/^def logoff():$/;"	kind:function	line:50
+logout_user	../app/routes.py	/^from flask_login import current_user, login_user, logout_user, login_required$/;"	kind:namespace	line:5
+make_shell_context	../hallen.py	/^def make_shell_context():$/;"	kind:function	line:5
+migrate	../app/__init__.py	/^migrate = Migrate(app, db)$/;"	kind:variable	line:9
+models	../app/__init__.py	/^from app import routes, models$/;"	kind:namespace	line:13
+models.py	../app/models.py	1;"	kind:file	line:1
+name	../app/models.py	/^    name = db.Column(db.String(64), index=True)$/;"	kind:variable	line:37
+op	../migrations/versions/1b239b10df5c_items_table.py	/^from alembic import op$/;"	kind:namespace	line:8
+op	../migrations/versions/1e089c7e8f1d_users_database.py	/^from alembic import op$/;"	kind:namespace	line:8
+op	../migrations/versions/fe2283970edb_.py	/^from alembic import op$/;"	kind:namespace	line:8
+os	../config.py	/^import os$/;"	kind:namespace	line:1
+password	../app/forms.py	/^    password  = PasswordField('Password',        validators=[DataRequired()])$/;"	kind:variable	line:15
+password	../app/forms.py	/^    password = PasswordField('Password', validators=[DataRequired()])$/;"	kind:variable	line:8
+password2	../app/forms.py	/^    password2 = PasswordField('Repeat Password', validators=[DataRequired(), EqualTo('password')])$/;"	kind:variable	line:16
+password_hash	../app/models.py	/^    password_hash = db.Column(db.String(128))$/;"	kind:variable	line:11
+pool	../migrations/env.py	/^from sqlalchemy import pool$/;"	kind:namespace	line:7
+process_revision_directives	../migrations/env.py	/^    def process_revision_directives(context, revision, directives):$/;"	kind:function	line:68
+redirect	../app/routes.py	/^from flask import render_template, flash, redirect, url_for, request$/;"	kind:namespace	line:1
+register	../app/routes.py	/^def register():$/;"	kind:function	line:55
+remember_me	../app/forms.py	/^    remember_me = BooleanField('Remember Me')$/;"	kind:variable	line:9
+render_template	../app/routes.py	/^from flask import render_template, flash, redirect, url_for, request$/;"	kind:namespace	line:1
+request	../app/routes.py	/^from flask import render_template, flash, redirect, url_for, request$/;"	kind:namespace	line:1
+revision	../migrations/versions/1b239b10df5c_items_table.py	/^revision = '1b239b10df5c'$/;"	kind:variable	line:13
+revision	../migrations/versions/1e089c7e8f1d_users_database.py	/^revision = '1e089c7e8f1d'$/;"	kind:variable	line:13
+revision	../migrations/versions/fe2283970edb_.py	/^revision = 'fe2283970edb'$/;"	kind:variable	line:13
+routes	../app/__init__.py	/^from app import routes, models$/;"	kind:namespace	line:13
+routes.py	../app/routes.py	1;"	kind:file	line:1
+run_migrations_offline	../migrations/env.py	/^def run_migrations_offline():$/;"	kind:function	line:36
+run_migrations_online	../migrations/env.py	/^def run_migrations_online():$/;"	kind:function	line:57
+sa	../migrations/versions/1b239b10df5c_items_table.py	/^import sqlalchemy as sa$/;"	kind:namespace	line:9
+sa	../migrations/versions/1e089c7e8f1d_users_database.py	/^import sqlalchemy as sa$/;"	kind:namespace	line:9
+sa	../migrations/versions/fe2283970edb_.py	/^import sqlalchemy as sa$/;"	kind:namespace	line:9
+set_password	../app/models.py	/^    def set_password(self, password):$/;"	kind:member	line:18
+submit	../app/forms.py	/^    submit = SubmitField('Register')$/;"	kind:variable	line:18
+submit	../app/forms.py	/^    submit = SubmitField('Sign In')$/;"	kind:variable	line:10
+target_metadata	../migrations/env.py	/^target_metadata = current_app.extensions['migrate'].db.metadata$/;"	kind:variable	line:28
+time_created	../app/models.py	/^    time_created = db.Column(db.DateTime, index=True, default=datetime.utcnow)$/;"	kind:variable	line:39
+timestamp	../app/models.py	/^    timestamp = db.Column(db.DateTime, index=True, default=datetime.utcnow)$/;"	kind:variable	line:28
+upgrade	../migrations/versions/1b239b10df5c_items_table.py	/^def upgrade():$/;"	kind:function	line:19
+upgrade	../migrations/versions/1e089c7e8f1d_users_database.py	/^def upgrade():$/;"	kind:function	line:19
+upgrade	../migrations/versions/fe2283970edb_.py	/^def upgrade():$/;"	kind:function	line:19
+url_for	../app/routes.py	/^from flask import render_template, flash, redirect, url_for, request$/;"	kind:namespace	line:1
+url_parse	../app/routes.py	/^from werkzeug.urls import url_parse$/;"	kind:namespace	line:7
+user_id	../app/models.py	/^    user_id = db.Column(db.Integer, db.ForeignKey('user.id'))$/;"	kind:variable	line:29
+user_id	../app/models.py	/^    user_id = db.Column(db.Integer, db.ForeignKey('user.id'))$/;"	kind:variable	line:46
+username	../app/forms.py	/^    username  = StringField(  'Username',        validators=[DataRequired()])$/;"	kind:variable	line:13
+username	../app/forms.py	/^    username = StringField('Username', validators=[DataRequired()])$/;"	kind:variable	line:7
+username	../app/models.py	/^    username = db.Column(db.String(64), index=True, unique=True)$/;"	kind:variable	line:9
+validate_email	../app/forms.py	/^    def validate_email(self, email_suggestion):$/;"	kind:member	line:32
+validate_username	../app/forms.py	/^    def validate_username(self, username_suggestion):$/;"	kind:member	line:35
+with_statement	../migrations/env.py	/^from __future__ import with_statement$/;"	kind:namespace	line:1

@@ -1,7 +1,10 @@
 {% extends "base.html" %}
 
-{% block content %}
-{% for item in items %}
-<div><p>{{ item.author.username }} says: <b> {{item.body}} </b></p></div>
+{% block app_content %}
+
+<h1>My Groups</h1>
+{% for group in groups %}
+<div><p><b> - <a href="{{ 'group/{}'.format(group.id)}}">{{ group.name }}</a> </b></p></div>
 {% endfor %}
+<a href="{{ url_for('create_group') }}"> Create New Group</a>
 {% endblock %}

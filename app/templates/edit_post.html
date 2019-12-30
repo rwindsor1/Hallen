@@ -1,0 +1,27 @@
+
+{% extends "base.html" %}
+
+{% block app_content %}
+    <h1>Edit Post in {{ group.name }} </h1>
+
+    <div>
+
+        <h2>Original Post:</h2>
+        <p><b> {{item.author.username }}: {{item.body}}</b></p>
+    </div>
+    <div>
+        <h2> New Post:</h2>
+        <form action="" method="post">
+
+            {{ form.hidden_tag() }}
+            <p>
+            {{ form.postcontent.label }}<br>
+            {{ form.postcontent(cols=50, rows=8)}}<br>
+            {% for error in form.postcontent.errors %}
+            <span style="color: red;">{{ error }}</span>
+            {% endfor %}
+            </p>
+            <p> {{ form.submit() }}</p>
+        </form>
+    </div>
+{% endblock %}

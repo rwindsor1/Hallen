@@ -1,0 +1,13 @@
+
+{% extends "base.html" %}
+
+{% block app_content %}
+<div>
+<h1> Are you sure?</h1>
+<p>
+You are about to delete the group '{{group.name}}'. 
+<a href="{{ url_for('delete_group', groupid = group.id) }}"> Click here</a> to do this 
+or <a href="{{ url_for('group', groupid=group.id) }}"> here</a> to go back.
+</p>
+</div>
+{% endblock %}

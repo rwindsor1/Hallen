@@ -1,37 +1,40 @@
-<html>
-    <head>
-        {% if title %}
-        <title>{{title}} - Hallen</title>
-        {% else %}
-        <title>Welcome to Hallen!</title>
-        {% endif %}
-    </head>
+{% extends 'bootstrap/base.html' %}
 
-    <body>
+{% block title %}
+    {% if title %}
+    {{title}} - Hallen
+    {% else %}
+    Welcome to Hallen!
+    {% endif %}
+{% endblock %}
+
+{% block navbar %}
+    {% if current_user.is_anonymous %}
+    <h1>Welcome to Hallen, Stranger!</h1>
+    {% else %}
+    <h1>Hello, {{ current_user.username }}</h1>
+    {% endif %}
+    <div>
+        <a href="{{ url_for('index') }}"> Home</a>
         {% if current_user.is_anonymous %}
-        <h1>Welcome to Hallen, Stranger!</h1>
+        <a href="{{ url_for('login') }}"> Log In </a>
+        <a href="{{ url_for('register') }}"> Register </a>
         {% else %}
-        <h1>Hello, {{ current_user.username }}</h1>
+        <a href="{{ url_for('logoff') }}"> Log Off </a>
         {% endif %}
-        <div>
-            <a href="{{ url_for('index') }}"> Home</a>
-            {% if current_user.is_anonymous %}
-            <a href="{{ url_for('login') }}"> Log In </a>
-            <a href="{{ url_for('register') }}"> Register </a>
-            {% else %}
-            <a href="{{ url_for('logoff') }}"> Log Off </a>
-            {% endif %}
-        </div>
-        <hr>
-        {% with messages = get_flashed_messages() %}
-        {% if messages %}
-        <ul>
-            {% for message in messages %}
-            <li> {{ message }}</li>
-            {% endfor %}
-        </ul>
-        {% endif %}
-        {% endwith %}
-        {% block content %}{% endblock %}
-    </body>
-</html>
+    </div>
+{% endblock %}
+
+{% block content %}
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    <ul>
+        {% for message in messages %}
+        <li> {{ message }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+    {% endwith %}
+    {% block app_content %}{% endblock %}
+    <footer class="page-footer font-small blue pt-4"> Hallen 2019, Created by Rhydian Windsor</footer>
+{% endblock %}
